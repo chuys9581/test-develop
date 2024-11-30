@@ -8,12 +8,12 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "module": "ESNext", // Asegúrate de usar módulos ES6
-    "moduleResolution": "Node", // Resolución de módulos compatible con Node
-    "target": "ESNext", // Utiliza la versión más reciente de ECMAScript
-    "allowSyntheticDefaultImports": true, // Permite importar módulos sin export default
-    "esModuleInterop": true, // Mejora la interoperabilidad entre módulos CommonJS y ES
-    "skipLibCheck": true, // Omite la comprobación de bibliotecas para evitar errores innecesarios
-    "strict": true // Habilita el modo estricto para una mejor detección de errores
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
   }
 }
