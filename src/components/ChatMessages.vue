@@ -15,20 +15,15 @@
               : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white',
           ]"
         >
-          <!-- Mensaje de texto -->
           <p v-if="mensaje.message.type === 'text'" class="whitespace-pre-wrap">
             {{ mensaje.message.text }}
           </p>
-
-          <!-- Mensaje de imagen -->
           <img
             v-else-if="mensaje.message.type === 'image' && mensaje.message.multimedia"
             :src="mensaje.message.multimedia.file"
             :alt="mensaje.message.multimedia.filename || 'Imagen'"
             class="rounded-lg max-w-full"
           />
-
-          <!-- Mensaje de video -->
           <video
             v-else-if="mensaje.message.type === 'video' && mensaje.message.multimedia"
             controls
@@ -39,8 +34,6 @@
               :type="mensaje.message.multimedia.mimetype"
             />
           </video>
-
-          <!-- Mensaje de documento -->
           <a
             v-else-if="mensaje.message.type === 'document' && mensaje.message.multimedia"
             :href="mensaje.message.multimedia.file"
@@ -71,7 +64,6 @@ import { DocumentIcon, CheckIcon } from '@heroicons/vue/24/outline'
 const store = useChatStore()
 const contenedorMensajes = ref<HTMLDivElement | null>(null)
 
-// Desplazarse hacia abajo cuando llegan nuevos mensajes
 watch(
   () => store.mensajesSeleccionados,
   () => {

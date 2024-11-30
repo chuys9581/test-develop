@@ -13,5 +13,4 @@ declare module '@heroicons/vue/24/outline' {
   export const SearchIcon: FunctionalComponent<SVGAttributes>
   export const DocumentIcon: FunctionalComponent<SVGAttributes>
   export const CheckIcon: FunctionalComponent<SVGAttributes>
-  // Añade aquí cualquier otro icono que estés utilizando
 }

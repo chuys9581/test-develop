@@ -73,7 +73,8 @@ import ChatHeader from './components/ChatHeader.vue'
 import ChatMessages from './components/ChatMessages.vue'
 import ChatInput from './components/ChatInput.vue'
 import ChatList from './components/ChatList.vue'
-import { ChatBubbleLeftIcon, MagnifyingGlassIcon } from '@heroicons/vue/24/outline'
+import ChatBubbleLeftIcon from '@heroicons/vue/24/outline/ChatBubbleLeftIcon'
+import MagnifyingGlassIcon from '@heroicons/vue/24/outline/MagnifyingGlassIcon'
 
 const store = useChatStore()
 const sidebarVisible = ref(false)
